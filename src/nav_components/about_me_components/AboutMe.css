@@ -1,0 +1,140 @@
+  
+  /* Headshot Image */
+  .headshot-img {
+    width: 30%;
+    margin-top: 1em;
+    border-radius: 0.2em;
+  }
+
+  /* Heading */
+  .my-name,
+  .occupation,
+  .portfolio-link {
+    margin: 0;
+  }
+  
+  .my-name {
+    padding-top: .3em;
+  }
+  
+  .occupation {
+    color: #2e8cff;
+    font-weight: 500;
+  }
+  
+  .portfolio-link {
+    font-size: .85em;
+  }
+  
+  
+  /* Buttons */
+  .btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .email-btn-link,
+  .linkedin-btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em;
+    margin: 1em;
+    border-radius: 0.3em;
+    background-color: white;
+    width: 34%;
+    text-decoration: none;
+  }
+  
+  .email-btn,
+  .linkedin-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #202431;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 500; 
+    font-size: 1em;
+  }
+  
+  .email-btn {
+    align-items: end;
+  }
+  
+  .btn-logo-email {
+    height: 19px;
+    padding-right: 0.3em
+  }
+  
+  .btn-logo-linkedin {
+    height: 17px;
+    padding-right: 0.3em;
+    transform: translateY(1px);
+  }
+  
+  
+  /* About & Interests */
+  .body-text {
+    text-align: left;
+    padding: 0 1.8em;
+  
+  }
+  
+  .about-me-header,
+  .interests-header,
+  .about-me-text,
+  .interests-text
+   {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-me-header,
+  .interests-header {
+    font-size: 1.2em;
+    padding-top: .4em;
+  }
+  
+  
+  .about-me-text,
+  .interests-text
+   {
+    font-size: .9em;
+    line-height: 2em;
+   }
+  
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #202431;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: .7em 0;
+  }
+  
+  .icon {
+    width: 1.6em;
+    height: 1.6em;
+    background-color: #918e9b;
+    padding: 0.3em;
+    margin: 0 1.3em;
+    border-radius: 0.3em;
+  }
+  
+  
+  /* Hover */
+  .email-btn-link:hover,
+  .linkedin-btn-link:hover,
+  .icon:hover {
+    cursor: pointer;
+    background-color: #2e8cff;
+    scale: 1.05;
+  }
+  
+  

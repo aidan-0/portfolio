@@ -1,0 +1,57 @@
+.content-card-title {
+    font-weight: 400;
+    color: #2e8cff;
+}
+
+.job {
+    padding: 0 1em;
+
+}
+
+.company-and-date > h3,
+.position,
+.duties {
+    margin: 0.3em 0;
+
+}
+
+.company-and-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-and-date > h3 {
+    font-weight: 600;
+}
+
+.position {
+    border-bottom: solid #2e8cff 1px;
+    margin: 0.4em 0;
+}
+
+.position,
+.duties {
+    text-align: left;
+}
+
+
+.duties{
+    font-size: .35em;
+    line-height: 4em;
+    list-style: none;
+    padding: 0;
+    padding-left: 3.5em;
+    margin: 0;
+}
+
+.duties > li {
+    font-weight: 200;
+    color: #eeeeee;
+    list-style-type: disc;
+    padding-bottom: .3em;
+}
+
+.job > ul > li::marker {
+    color:#2e8cff;
+}
+
