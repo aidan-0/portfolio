@@ -1,5 +1,6 @@
 :root {
-  background-color: #191919;
+  /* background-color: #191919; */
+  background-color: #1d1d20;
   color: #eeeeee;
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -14,6 +15,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+  overflow-x: hidden;
 }
 
 header {
@@ -29,9 +31,9 @@ header {
   height: 7vh;
 }
 
-/* header > p {
-  border: solid 1px red;
-} */
+header > p {
+  z-index: 10;
+}
 
 .main-content {
   grid-row: 2;
@@ -43,12 +45,9 @@ header {
 
 .content-container, .scrolling-nav {
   box-sizing: border-box;
-  /* overflow-y: auto; */
-  /* min-height: 0; */
-  padding: .5em 2em 2em;
+  /* padding: 2em; */
   height: 93vh;
 }
-
 
 
 /* Content Section */
@@ -59,6 +58,8 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 10vw;
 }
 
 .content-header {
@@ -75,8 +76,8 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 10px;
-  height: 95%;
-  width: 85%;
+  height: 85%;
+  width: 95%;
   transition: .5s ease-out;
   overflow: auto;
   /* add a slight shadow */
@@ -93,22 +94,45 @@ header {
 /* Scrolling Nav */
 
 .scrolling-nav {
-  /* border: solid 1px red; */
+  margin-right: 10vw;
   text-align: end;
-  grid-row: 1;
-  grid-column: 2;
+  /* grid-row: 1;
+  grid-column: 2; */
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: end;
 }
 
-/* .scrolling-nav > h3 {
-  font-weight: 200;
-  font-size: 2.5em;
-} */
-
-li {
-  font-weight: 200;
-  font-size: 2.5em;
-  text-decoration: none;
+.nav-list {
   list-style: none;
-  color: white;
+  padding: 0;
+  margin: 0;
+  line-height: 10vh;
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.nav-list > li {
+  transition: 0.4s ease-in-out;
+}
+.nav-list > li:hover {
+  transform: scale(1.1);
+}
+
+.link-style {
+  color: white;
+  text-decoration: none;
+  font-size: 3vw;
+  font-weight: 200;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.85;
+}
+
+.link-style:hover {
+  opacity: 1 !important;
+}
+
+
 

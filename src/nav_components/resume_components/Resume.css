@@ -46,6 +46,7 @@
 
 .duties > li {
     font-weight: 200;
+    font-size: 2.5em;
     color: #eeeeee;
     list-style-type: disc;
     padding-bottom: .3em;
