@@ -52,6 +52,7 @@ body {
 .content-container, .nav {
   box-sizing: border-box;
   height: 100vh;
+  transition: 1s ease-in-out;
 }
 
 
