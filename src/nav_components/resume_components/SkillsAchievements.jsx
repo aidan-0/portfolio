@@ -73,8 +73,7 @@ export default function SkillsAchievements() {
                 Reports Online
               </a>
             </span>
-            . Contributing to enhanced digital presence and client
-            engagement.
+            . Contributing to enhanced digital presence and client engagement.
           </li>
         </ul>
 
@@ -82,16 +81,20 @@ export default function SkillsAchievements() {
         <h3 className="position skills-header">Skills</h3>
         <ul className="duties">
           <li>
-          Exceptional interpersonal skills with a high level of attention to detail.
+            Exceptional interpersonal skills with a high level of attention to
+            detail.
           </li>
           <li>
-          Strong adaptability and resilience in high-pressure, fast-paced environments.
+            Strong adaptability and resilience in high-pressure, fast-paced
+            environments.
           </li>
           <li>
-          Proven ability to deliver high-quality work within strict timeframes.
+            Proven ability to deliver high-quality work within strict
+            timeframes.
           </li>
           <li>
-          Collaborative team player with the ability to develop and deliver ideas effectively.
+            Collaborative team player with the ability to develop and deliver
+            ideas effectively.
           </li>
           <li>
             Successfully project managed the Asset 3D reseller business, leading
@@ -128,8 +131,7 @@ export default function SkillsAchievements() {
                 Reports Online
               </a>
             </span>
-            . Contributing to enhanced digital presence and client
-            engagement.
+            . Contributing to enhanced digital presence and client engagement.
           </li>
         </ul>
       </div>
