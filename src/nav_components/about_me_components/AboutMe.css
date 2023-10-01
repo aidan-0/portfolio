@@ -44,6 +44,7 @@
     background-color: white;
     width: 34%;
     text-decoration: none;
+    transition: ease-in 0.15s;
   }
   
   .email-btn,
@@ -125,6 +126,7 @@
     padding: 0.3em;
     margin: 0 1.3em;
     border-radius: 0.3em;
+    transition: ease-in 0.1s;
   }
   
   
@@ -137,4 +139,6 @@
     scale: 1.05;
   }
   
+  
+
   
