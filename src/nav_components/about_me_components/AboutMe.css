@@ -45,6 +45,7 @@
     width: 34%;
     text-decoration: none;
     transition: ease-in 0.15s;
+    max-width: 10vw;
   }
   
   .email-btn,

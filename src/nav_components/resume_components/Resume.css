@@ -129,3 +129,8 @@
   background-color: #2e8cff;
   scale: 1.02;
 }
+
+.resume-link {
+  text-decoration: none;
+  color: white;
+}

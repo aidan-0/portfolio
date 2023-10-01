@@ -26,8 +26,15 @@ export default function Resume() {
         icon="grommet-icons:next"
         onClick={handleClick}
       />
-      <button className="resume-btn">Download PDF of my Resume</button>
-      {/* Add download functionality */}
+      <button className="resume-btn">
+        <a
+          href="https://github.com/aidan-0/portfolio/raw/main/Resume-Aidan-McDonald.pdf"
+          download="Aidan_McDonald_Resume.pdf"
+          className="resume-link"
+        >
+          Download PDF of my Resume
+        </a>
+      </button>
     </div>
   );
 }
