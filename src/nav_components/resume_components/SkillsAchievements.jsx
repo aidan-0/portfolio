@@ -3,7 +3,6 @@ import React from "react";
 export default function SkillsAchievements() {
   return (
     <div>
-      {/* link this and add the skills / achievements section. add an arrow to click to go to skills and achievements */}
       <h3 className="content-card-title">Skills & Achievements</h3>
       {/* CFC */}
       <div className="skills">
@@ -80,6 +79,15 @@ export default function SkillsAchievements() {
         {/* Skills */}
         <h3 className="position skills-header">Skills</h3>
         <ul className="duties">
+          <li>
+          <span className="bold">Languages: </span>JavaScript(ES6), HTML5, CSS3, Python, SQL, C#.
+          </li>
+          <li>
+            <span className="bold">Libraries & Frameworks: </span>React, Vue.js, Vuetify.
+          </li>
+          <li>
+          <span className="bold">Tools: </span>Tools: Git & Github, Command Line, Adobe Photoshop, Illustrator & Lightroom, Canva, Figma, Trello, Slack, Microsoft Office Suite, Google Suite, Squarespace,  Mailchimp, Notion, Zoom, Google Analytics, Google Ads, Google Tag Manager, Google Search Console.
+          </li>
           <li>
             Exceptional interpersonal skills with a high level of attention to
             detail.

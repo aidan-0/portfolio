@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100vw;
+  letter-spacing: 0.02em;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -27,6 +32,9 @@ body {
   /* have background dots follow mouse */
 }
 
+.bold {
+  font-weight: 600;
+}
 
 /* header {
   border: solid 1px red;
@@ -208,3 +216,4 @@ body:hover::before {
     transparent);
   transform: translateY(-50%);
 }
+
