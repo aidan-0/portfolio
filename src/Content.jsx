@@ -8,7 +8,6 @@ import Contact from './nav_components/contact_components/Contact'
 export default function Content() {
   return (
     <div className="content-container">
-      {/* <h2 className="content-header">(display content heading)</h2> */}
       <div className="content-card">
         <Routes>
           <Route path="aboutme" element={<AboutMe />} />

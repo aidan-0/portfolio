@@ -26,7 +26,6 @@ export default function Navbar() {
               </Link>
             </span>
           </li>
-          {/* when clicking on projects, make the nav bar show the full list of projects and have it scrollable like the nav */}
           <li className="li--contact">
             <span className="link-wrapper">
               <Link to="contact" className="link-style">

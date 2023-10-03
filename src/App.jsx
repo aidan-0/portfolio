@@ -1,13 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 // import Header from './Header';
 import Content from './Content';
 import Navbar from './Navbar';
+import Socials from './Socials';
 
 export default function App() {
-    const [y, setY] = useState(0);
+  // Side Accent
+    const [sideAccentY, setSideAccentY] = useState(0);
   
     const handleMouseMove = (e) => {
-      setY(e.clientY);
+      setSideAccentY(e.clientY);
     };
   
     useEffect(() => {
@@ -18,30 +20,40 @@ export default function App() {
       };
     }, []);
 
+    // // Background Movement
+    // const bodyRef = useRef(null);
 
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      document.body.style.setProperty('--mouse-x', e.clientX + 'px');
-      document.body.style.setProperty('--mouse-y', e.clientY + 'px');
-    }
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-
+    // useEffect(() => {
+    //   const handleMouseMove = (event) => {
+    //     if (bodyRef.current) {
+    //       const { clientX, clientY } = event;
+    //       const { left, top, width, height } = bodyRef.current.getBoundingClientRect();
+  
+    //       const x = ((clientX - left) / width) * 1;
+    //       const y = ((clientY - top) / height) * 1;
+  
+    //       bodyRef.current.style.backgroundPosition = `${x}% ${y}%`;
+    //     }
+    //   };
+  
+    //   document.addEventListener("mousemove", handleMouseMove);
+  
+    //   return () => {
+    //     document.removeEventListener("mousemove", handleMouseMove);
+    //   };
+    // }, []);
+  
+  
 
 
   return (
     <div className='page-content'>
-      <div className="follower--left" style={{ top: y }}></div>
-      <div className="follower--right" style={{ top: y }}></div>
+      <div className="follower--right" style={{ top: sideAccentY }}></div>
       {/* <Header /> */}
       <div className='main-content'>
         <Navbar />
         <Content />
+        <Socials />
       </div>
     </div>
   );
