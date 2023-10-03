@@ -33,16 +33,19 @@ export default function CardBody() {
       <div className="body-text">
         <h2 className="about-me-header">About</h2>
         <p className="about-me-text">
-          Skilled in both front-end frameworks such as React and Vue, and
-          backend technologies including Python, C#, and SQL. Dedicated to
-          creating complete end-to-end solutions that are both scalable and
-          user-centric.
-        </p>
-
-        <h2 className="interests-header">Interests</h2>
-        <p className="interests-text">
-          When not coding, I enjoy exercising, swimming at the beach, cooking with my
-          partner, and electronic music production.
+        Hi, I'm <span className="fancy">Aidan McDonald</span>! Welcome to the my portfolio, where
+        art meets code. As a passionate front-end developer, I've dedicated
+        myself to creating applications that don't just work seamlessly but also
+        captivate the eye. Equipped with a strong knowledge of React, Vue, and
+        C#, I endeavor to merge form with function, ensuring every user not only
+        finds what they're looking for but enjoys the journey along the way.
+        <br />
+        <br />
+        However, my journey doesn't end at the user interface. I'm diving deep into
+        the realm of back-end development, expanding my horizons and solidifying
+        my skillset from end to end. The world of coding is vast, and I am
+        relentlessly pursuing knowledge, ensuring I remain at the cutting edge
+        of development.
         </p>
       </div>
     </div>

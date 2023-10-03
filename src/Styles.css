@@ -27,8 +27,9 @@ body {
   );
   background-size: 1.1rem 1.1rem;
 }
-*/ .bold {
-  font-weight: 600;
+
+.bold {
+  font-weight: 500;
 }
 
 /* header {
@@ -265,4 +266,10 @@ body {
     height: 100%;
     opacity: 0.7;
   }
+}
+
+
+.fancy {
+  font-weight: 500;
+  color: #2e8cff;
 }
