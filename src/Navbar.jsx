@@ -1,6 +1,15 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Contact from "./nav_components/contact_components/Contact";
 
 export default function Navbar() {
+  const [showModal, setShowModal] = useState(false);
+
+  function handleContactClick() {
+    console.log("contact clicked");
+    setShowModal(!showModal);
+  }
+
   return (
     <div className="wrapper">
       <nav className="nav">
@@ -28,14 +37,17 @@ export default function Navbar() {
           </li>
           <li className="li--contact">
             <span className="link-wrapper wrapper--contact">
-              <Link to="contact" className="link-style">
+              <button
+                className="link-style contact-modal-btn"
+                onClick={handleContactClick}
+              >
                 Contact
-              </Link>
+              </button>
             </span>
           </li>
-          {/* clicking on contact provides a modal with all contact details */}
         </ul>
       </nav>
+      {showModal && (<Contact onClose={() => setShowModal(false)} />)}
     </div>
   );
 }

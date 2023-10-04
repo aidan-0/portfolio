@@ -9,7 +9,7 @@ export default function CardFooter() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="./github.svg" className="icon github-icon" />
+        <img src="./github.svg" className="icon" />
       </a>
 
       <a
@@ -17,7 +17,7 @@ export default function CardFooter() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="./discord.svg" className="icon discord-icon" />
+        <img src="./discord.svg" className="icon" />
       </a>
 
       <a
@@ -25,7 +25,7 @@ export default function CardFooter() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="./linkedin.svg" className="icon linkedin-icon" />
+        <img src="./linkedin.svg" className="icon" />
       </a>
     </footer>
   );

@@ -113,3 +113,10 @@ div > .project-description {
   color: #eeeeee;
   background-color: #225ba0;
 }
+
+
+.project-link {
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+}

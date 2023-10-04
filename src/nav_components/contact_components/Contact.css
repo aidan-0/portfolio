@@ -1,0 +1,92 @@
+/* Contact Modal */
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.modal-content {
+  background-color: #343437;
+  border: solid 2px rgba(46, 140, 255, 0.5);
+  padding: 1.4em;
+  border-radius: 8px;
+  width: 85%;
+  max-width: 35em;
+  position: relative; /* for the close button */
+  transition: 0.5s;
+}
+
+.modal-content:hover {
+  border: solid 2px rgba(46, 140, 255, 1);
+}
+
+.close-btn {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 2em;
+  cursor: pointer;
+  color: #ddd;
+  scale: 2;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-info button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:hover .contact-icon {
+  background-color: #2e8cff;
+}
+
+.contact-link:hover .modal-text {
+  text-decoration: underline;
+  text-decoration-color: #2e8cff;
+  text-decoration-thickness: 2px;
+  /* transition: ease-in-out 0.5s; */
+}
+
+h1.modal-text {
+  margin: 0 0.5em;
+  font-weight: 500;
+}
+
+h3.modal-text {
+  margin: 0.5em;
+  font-weight: 400;
+}
+
+.contact-icon {
+  background-color: #eee;
+}
+
+

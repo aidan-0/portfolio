@@ -100,6 +100,16 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.content-card-title {
+  font-weight: 400;
+  color: #eeeeee;
+  margin: 1em 0em 0.5em;
+  font-size: 1.3em;
+  text-decoration: underline;
+  text-decoration-color: #2e8cff;
+  letter-spacing: 0.05em;
+}
+
 /* Nav */
 .nav {
   /* border: solid 1px red; */
@@ -163,6 +173,15 @@ body {
 .link-style:hover {
   opacity: 1;
 }
+
+
+.contact-modal-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Nav load in animation */
 .li--aboutme,
@@ -268,8 +287,11 @@ body {
   }
 }
 
-
 .fancy {
   font-weight: 500;
   color: #2e8cff;
+}
+
+.font-weight-300 {
+  font-weight: 300;
 }

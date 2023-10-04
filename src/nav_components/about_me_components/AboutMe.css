@@ -1,3 +1,12 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-aboutme {
+  flex: 1 1 auto;
+}
+
 /* Headshot Image */
 .headshot-img {
   width: 30%;
@@ -59,9 +68,7 @@
   font-size: 1em;
 }
 
-.email-btn {
-  align-items: end;
-}
+
 
 .btn-logo-email {
   height: 19px;
@@ -71,7 +78,6 @@
 .btn-logo-linkedin {
   height: 17px;
   padding-right: 0.3em;
-  transform: translateY(1px);
 }
 
 /* About & Interests */
@@ -106,7 +112,7 @@
 footer {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
   background-color: #202431;
