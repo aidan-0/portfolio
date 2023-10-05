@@ -22,10 +22,10 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 1px,
+    rgba(46, 140, 255, 0.15) 1px,
     transparent 1px
   );
-  background-size: 1.1rem 1.1rem;
+  background-size: 1.5rem 1.5rem;
 }
 
 .bold {
@@ -139,7 +139,7 @@ body {
   /* remove height and width if i want to remove the dot */
   height: 3px;
   width: 3px;
-  background-color: white;
+  background-color: #eee;
   transition: width 0.4s ease-in-out;
 }
 
@@ -434,5 +434,86 @@ max width values
     transform: none;
   }
 
-  
+  button.link-style {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    padding: 0 0 2px 0;
+  }
+
+  .li--contact > .link-wrapper::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    height: 3px;
+    width: 3px;
+    background-color: #eee;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .li--contact > .link-wrapper:hover::before {
+    width: 100%;
+    height: 2px;
+    background-color: #2e8cff;
+  }
+
+  .follower--right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /* find out why theres a gap at the top of content-container */
+
+  .nav-list > li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 70%;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #2e8cff;
+    border-radius: 5px;
+  }
+
+  .nav-list > li:hover {
+    transform: scale(1.05);
+    background-color: rgba(46, 140, 255, 0.1);
+  }
+
+  .link-wrapper::before {
+    height: 0px;
+  }
+
+  /* Hamburger Styles */
+  .hamburger {
+    cursor: pointer;
+    font-size: 3em;
+  }
+
+  .nav-list {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%); /* Initially hide the nav */
+  }
+
+  .nav-list.open {
+    transform: translateY(0); /* Show the nav when the menu is open */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1d1d20;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list > li {
+    margin: 1em 0;
+  }
 }
