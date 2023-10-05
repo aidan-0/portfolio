@@ -463,7 +463,7 @@ max width values
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 650px) {
   /* find out why theres a gap at the top of content-container */
 
   .nav-list > li {
