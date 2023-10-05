@@ -32,19 +32,6 @@ body {
   font-weight: 500;
 }
 
-/* header {
-  border: solid 1px red;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 1.4em;
-  grid-row: 1;
-  grid-column: 1;
-  height: 7vh;
-} */
-
 .main-content {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -136,6 +123,7 @@ body {
 .nav-list > li {
   position: relative;
   transition: 0.4s ease-in-out;
+  font-size: 1.2em;
 }
 
 .link-wrapper {
@@ -174,14 +162,12 @@ body {
   opacity: 1;
 }
 
-
 .contact-modal-btn {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
-
 
 /* Nav load in animation */
 .li--aboutme,
@@ -294,4 +280,159 @@ body {
 
 .font-weight-300 {
   font-weight: 300;
+}
+
+/* Media Queries */
+/* @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+} */
+
+/* 
+max width values
+.content-container - margin-left: 17vw;
+.content-card - height: 90%; width: 85%;
+.nav - margin-right: 17vw;
+.main-content - grid-template-columns: 60% 40%;
+*/
+
+.content-container,
+.nav {
+  /* border: solid 1px red; */
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 14vw;
+  }
+
+  .content-card {
+    width: 95%;
+  }
+
+  .nav {
+    margin-right: 14vw;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 14vw;
+  }
+
+  .content-card {
+    width: 95%;
+  }
+
+  .nav {
+    margin-right: 14vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 12vw;
+  }
+
+  .content-card {
+    width: 100%;
+  }
+
+  .nav {
+    margin-right: 12vw;
+  }
+
+  .nav-list > li {
+    padding-top: 1em;
+  }
+
+  .main-content {
+    /* the 35% pushes the nav to the right to look nicer */
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 10vw;
+  }
+
+  .content-card {
+    width: 100%;
+  }
+
+  .nav {
+    margin-right: 10vw;
+  }
+
+  .nav-list > li {
+    padding-top: 1em;
+  }
+
+  .main-content {
+    /* the 35% pushes the nav to the right to look nicer */
+    grid-template-columns: 70% 35%;
+  }
+
+  .email-btn-link,
+  .linkedin-btn-link {
+    max-width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.content-container {
+    margin: 0 2em;
+    height: 95vh;
+  }
+
+  .nav {
+    margin: 0;
+    height: 7vh;
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-list > li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  .nav-list > li:hover {
+    transform: none;
+  }
+
+  
 }

@@ -19,7 +19,8 @@
   flex-direction: column;
   position: relative;
   min-height: 7vh;
-  width: 34vw;
+  width: 100%;
+  margin: 0 1.3em;
   transition: 0.3s ease-out;
 }
 
