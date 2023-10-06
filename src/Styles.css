@@ -557,6 +557,11 @@ max width values
   .content-container {
     transform: translateY(-3vh);
   }
+
+  .content-container {
+    animation: content-load .3s .3s forwards;
+  }
+
 }
 
 @media only screen and (min-width: 651px) {
@@ -564,6 +569,9 @@ max width values
   .nav-title {
     display: none;
   }
+
+
+
 }
 
 @media only screen and (max-width: 500px) {
