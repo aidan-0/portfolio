@@ -8,19 +8,18 @@
 }
 
 * {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 *:focus {
-    outline: none !important;
+  outline: none !important;
 }
-
 
 button {
   font-family: "Poppins", sans-serif;
@@ -310,16 +309,7 @@ max width values
 .main-content - grid-template-columns: 60% 40%;
 */
 
-.content-container,
-.nav {
-  /* border: solid 1px red; */
-}
-
 @media only screen and (max-width: 1600px) {
-  body {
-    /* background-color: red; */
-  }
-
   .content-container {
     margin-left: 14vw;
   }
@@ -334,10 +324,6 @@ max width values
 }
 
 @media only screen and (max-width: 1400px) {
-  body {
-    /* background-color: red; */
-  }
-
   .content-container {
     margin-left: 14vw;
   }
@@ -352,10 +338,6 @@ max width values
 }
 
 @media only screen and (max-width: 1200px) {
-  body {
-    /* background-color: red; */
-  }
-
   .content-container {
     margin-left: 12vw;
   }
@@ -379,10 +361,6 @@ max width values
 }
 
 @media only screen and (max-width: 1000px) {
-  body {
-    /* background-color: red; */
-  }
-
   .content-container {
     margin-left: 10vw;
   }
@@ -477,9 +455,10 @@ max width values
     display: none;
   }
 
-  .link-style, button.link-style {
+  .link-style,
+  button.link-style {
     vertical-align: baseline; /* or middle or any other value that suits your design */
-}
+  }
 }
 
 @media only screen and (max-width: 650px) {
