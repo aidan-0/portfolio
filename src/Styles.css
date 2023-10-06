@@ -7,6 +7,21 @@
   letter-spacing: 0.02em;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+
 button {
   font-family: "Poppins", sans-serif;
 }
@@ -22,28 +37,15 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 1px,
+    rgba(46, 140, 255, 0.15) 1px,
     transparent 1px
   );
-  background-size: 1.1rem 1.1rem;
+  background-size: 1.5rem 1.5rem;
 }
 
 .bold {
   font-weight: 500;
 }
-
-/* header {
-  border: solid 1px red;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 1.4em;
-  grid-row: 1;
-  grid-column: 1;
-  height: 7vh;
-} */
 
 .main-content {
   display: grid;
@@ -136,6 +138,7 @@ body {
 .nav-list > li {
   position: relative;
   transition: 0.4s ease-in-out;
+  font-size: 1.2em;
 }
 
 .link-wrapper {
@@ -151,7 +154,7 @@ body {
   /* remove height and width if i want to remove the dot */
   height: 3px;
   width: 3px;
-  background-color: white;
+  background-color: #eee;
   transition: width 0.4s ease-in-out;
 }
 
@@ -174,14 +177,12 @@ body {
   opacity: 1;
 }
 
-
 .contact-modal-btn {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
-
 
 /* Nav load in animation */
 .li--aboutme,
@@ -294,4 +295,358 @@ body {
 
 .font-weight-300 {
   font-weight: 300;
+}
+
+/* Media Queries */
+/* @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+} */
+
+/* 
+max width values
+.content-container - margin-left: 17vw;
+.content-card - height: 90%; width: 85%;
+.nav - margin-right: 17vw;
+.main-content - grid-template-columns: 60% 40%;
+*/
+
+.content-container,
+.nav {
+  /* border: solid 1px red; */
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 14vw;
+  }
+
+  .content-card {
+    width: 95%;
+  }
+
+  .nav {
+    margin-right: 14vw;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 14vw;
+  }
+
+  .content-card {
+    width: 95%;
+  }
+
+  .nav {
+    margin-right: 14vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 12vw;
+  }
+
+  .content-card {
+    width: 100%;
+  }
+
+  .nav {
+    margin-right: 12vw;
+  }
+
+  .nav-list > li {
+    padding-top: 1em;
+  }
+
+  .main-content {
+    /* the 35% pushes the nav to the right to look nicer */
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .content-container {
+    margin-left: 10vw;
+  }
+
+  .content-card {
+    width: 100%;
+  }
+
+  .nav {
+    margin-right: 10vw;
+  }
+
+  .nav-list > li {
+    padding-top: 1em;
+  }
+
+  .main-content {
+    /* the 35% pushes the nav to the right to look nicer */
+    grid-template-columns: 70% 35%;
+  }
+
+  .email-btn-link,
+  .linkedin-btn-link {
+    max-width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.content-container {
+    margin: 0 2em;
+    height: 95vh;
+  }
+
+  .nav {
+    margin: 0;
+    height: 7vh;
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-list > li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  .nav-list > li:hover {
+    transform: none;
+  }
+
+  button.link-style {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    padding: 0 0 2px 0;
+  }
+
+  .li--contact > .link-wrapper::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    height: 3px;
+    width: 3px;
+    background-color: #eee;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .li--contact > .link-wrapper:hover::before {
+    width: 100%;
+    height: 2px;
+    background-color: #2e8cff;
+  }
+
+  .follower--right {
+    display: none;
+  }
+
+  .link-style, button.link-style {
+    vertical-align: baseline; /* or middle or any other value that suits your design */
+}
+}
+
+@media only screen and (max-width: 650px) {
+  /* contact button sizing not quite right. first three stylings below help that */
+  .nav-list > li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.7em 0.4em;
+    margin: 0;
+    border: 1px solid #2e8cff;
+    border-radius: 5px;
+    width: 75vw;
+  }
+
+  button.link-style {
+    height: 100%;
+    padding: 0.7em 0.4em;
+    width: 80vw;
+  }
+
+  .nav-list > li:hover {
+    transform: scale(1.05);
+    background-color: rgba(46, 140, 255, 0.1);
+  }
+
+  .link-wrapper::before {
+    display: none;
+  }
+
+  .wrapper {
+    background-color: rgba(46, 140, 255, 0.1);
+  }
+
+  /* Hamburger Styles */
+  .hamburger {
+    cursor: pointer;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+
+  .nav-list.open {
+    transform: translateY(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1d1d20;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list > li {
+    margin: 1em 0;
+  }
+
+  .nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    margin-left: 5vw;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .nav-title > h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-container {
+    transform: translateY(-3vh);
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .hamburger,
+  .nav-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.wrapper {
+    padding: 0.5em;
+  }
+
+  .content-container {
+    transform: translateY(-3.5vh);
+  }
+
+  div.content-container {
+    margin: 2vw;
+    height: 96vh;
+  }
+
+  .icon-prev,
+  .icon-next {
+    margin: 0;
+  }
+
+  ul.duties {
+    padding: 0 0 0 1em;
+  }
+
+  div.job,
+  div.body-text {
+    padding: 0 0.5em;
+  }
+
+  .ul.duties > li,
+  .company-and-date,
+  .position {
+    font-size: 0.9em;
+  }
+
+  p.about-me-text {
+    font-size: 0.8em;
+  }
+
+  h3.content-card-title {
+    font-size: 1.2em;
+    margin-top: 1.25em;
+  }
+
+  .email-btn-link,
+  .linkedin-btn-link {
+    max-width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em 0.5em;
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  button.link-style {
+    width: 81.5vw;
+  }
 }
