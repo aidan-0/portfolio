@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.0.1",
   "type": "module",
+  "homepage": "https://aidan-0.github.io/portfolio/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -23,6 +26,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "vite": "^4.4.5"
   }
 }
