@@ -485,10 +485,23 @@ max width values
     height: 0px;
   }
 
+  .wrapper {
+    padding: 1em 0;
+    border-bottom: 1px solid #2e8cff;
+    background-color:rgba(46, 140, 255, 0.1);
+  }
+
+
+
   /* Hamburger Styles */
   .hamburger {
     cursor: pointer;
     font-size: 3em;
+    margin-left: auto;
+    margin-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-list {
@@ -516,4 +529,33 @@ max width values
   .nav-list > li {
     margin: 1em 0;
   }
+
+  .nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    margin-left: 5vw;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .nav-title > h1 {
+    margin: 0;
+    padding: 0;
+   } 
+
+  .content-container {
+    transform: translateY(-3vh);
+  }
+}
+
+
+
+@media only screen and (min-width: 651px) {
+  .hamburger,
+  .nav-title {
+    display: none;
+  }
+
 }

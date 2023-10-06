@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Contact from "./nav_components/contact_components/Contact";
+import { Icon } from '@iconify/react';
+
 
 export default function Navbar() {
   const [showModal, setShowModal] = useState(false);
@@ -19,8 +21,11 @@ export default function Navbar() {
   return (
     <div className="wrapper">
       <nav className="nav">
+        <div className="nav-title">
+          <h1>Aidan McDonald</h1>
+        </div>
         <div className="hamburger" onClick={handleMenuClick}>
-          ☰
+        <Icon icon="line-md:menu" />
         </div>
         <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
           <li className="li--aboutme" onClick={handleMenuClick}>
