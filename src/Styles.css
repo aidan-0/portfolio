@@ -7,6 +7,21 @@
   letter-spacing: 0.02em;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+
 button {
   font-family: "Poppins", sans-serif;
 }
@@ -461,19 +476,38 @@ max width values
   .follower--right {
     display: none;
   }
+
+  .link-style, button.link-style {
+    vertical-align: baseline; /* or middle or any other value that suits your design */
+}
 }
 
 @media only screen and (max-width: 650px) {
-  /* find out why theres a gap at the top of content-container */
-
+  /* contact button sizing not quite right. first three stylings below help that */
   .nav-list > li {
-    margin: 0.5em 0;
-    padding: 0.5em;
-    width: 70%;
-    text-align: center;
-    padding: 1em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.7em 0.4em;
+    margin: 0;
     border: 1px solid #2e8cff;
     border-radius: 5px;
+    width: 75vw;
+  }
+
+  button.link-style {
+    height: 100%;
+    padding: 0.7em 0.4em;
+    width: 80vw;
   }
 
   .nav-list > li:hover {
@@ -482,23 +516,19 @@ max width values
   }
 
   .link-wrapper::before {
-    height: 0px;
+    display: none;
   }
 
   .wrapper {
-    padding: 1em 0;
-    border-bottom: 1px solid #2e8cff;
-    background-color:rgba(46, 140, 255, 0.1);
+    background-color: rgba(46, 140, 255, 0.1);
   }
-
-
 
   /* Hamburger Styles */
   .hamburger {
     cursor: pointer;
     font-size: 3em;
     margin-left: auto;
-    margin-right: .5em;
+    margin-right: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -506,11 +536,11 @@ max width values
 
   .nav-list {
     transition: transform 0.3s ease-in-out;
-    transform: translateY(-100%); /* Initially hide the nav */
+    transform: translateY(-100%);
   }
 
   .nav-list.open {
-    transform: translateY(0); /* Show the nav when the menu is open */
+    transform: translateY(0);
   }
 
   .nav-list {
@@ -543,19 +573,80 @@ max width values
   .nav-title > h1 {
     margin: 0;
     padding: 0;
-   } 
+  }
 
   .content-container {
     transform: translateY(-3vh);
   }
 }
 
-
-
 @media only screen and (min-width: 651px) {
   .hamburger,
   .nav-title {
     display: none;
   }
+}
 
+@media only screen and (max-width: 500px) {
+  div.wrapper {
+    padding: 0.5em;
+  }
+
+  .content-container {
+    transform: translateY(-3.5vh);
+  }
+
+  div.content-container {
+    margin: 2vw;
+    height: 96vh;
+  }
+
+  .icon-prev,
+  .icon-next {
+    margin: 0;
+  }
+
+  ul.duties {
+    padding: 0 0 0 1em;
+  }
+
+  div.job,
+  div.body-text {
+    padding: 0 0.5em;
+  }
+
+  .ul.duties > li,
+  .company-and-date,
+  .position {
+    font-size: 0.9em;
+  }
+
+  p.about-me-text {
+    font-size: 0.8em;
+  }
+
+  h3.content-card-title {
+    font-size: 1.2em;
+    margin-top: 1.25em;
+  }
+
+  .email-btn-link,
+  .linkedin-btn-link {
+    max-width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em 0.5em;
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  button.link-style {
+    width: 81.5vw;
+  }
 }
