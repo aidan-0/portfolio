@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://aidan-0.github.io/portfolio/",
+  "homepage": "https://aidan-0.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
